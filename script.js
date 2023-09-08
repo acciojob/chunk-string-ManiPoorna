@@ -1,5 +1,12 @@
 function stringChop(str, size) {
   // your code here
+	if(str.length == 0){
+		return [];
+	}
+	if(str.length <= size){
+		return str
+	}
+	
 	let ans = [];
 	let index= 0;
 	for (let i = 0; i < str.length/size+1; i++) {
